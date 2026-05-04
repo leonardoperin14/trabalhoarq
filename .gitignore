@@ -1,0 +1,8 @@
+.venv/
+.git-real/
+.mplconfig/
+node_modules/
+package-lock.json
+package.json
+resultados*/
+*.txt
