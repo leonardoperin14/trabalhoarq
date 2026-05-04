@@ -32,11 +32,17 @@ Esse comando recria o mesmo vetor fixo de 6800 posições em todas as linguagens
 ./benchmark.sh --all MergeSort CombSort
 ```
 
-Nesta máquina, o `matplotlib` foi instalado em um ambiente virtual local. Para usar esse Python no script e evitar aviso de cache do Matplotlib, rode:
+Nesta máquina, o Python do sistema possui `matplotlib`. Para evitar aviso de cache do Matplotlib, rode:
 
 ```bash
 mkdir -p .mplconfig
-env PATH="$PWD/.venv/bin:$PATH" MPLCONFIGDIR="$PWD/.mplconfig" ./benchmark.sh --all MergeSort CombSort
+env MPLCONFIGDIR="$PWD/.mplconfig" ./benchmark.sh --all MergeSort CombSort
+```
+
+Se o `perf` estiver bloqueado por `kernel.perf_event_paranoid`, libere temporariamente com:
+
+```bash
+sudo sysctl kernel.perf_event_paranoid=1
 ```
 
 Se o processador tiver núcleos híbridos, use um núcleo fixo:

@@ -1,0 +1,144 @@
+### ALVO_BARRA: combsort.py ###
+
+ Performance counter stats for './combsort.py' (100 runs):
+
+            106.58 msec task-clock:u                     #    0.970 CPUs utilized               ( +-  1.22% )
+              2775      page-faults                                                             ( +-  0.00% )
+         320486329      cycles                                                                  ( +-  1.20% )  (61.51%)
+         331598326      instructions                     #    1.03  insn per cycle              ( +-  0.30% )  (74.40%)
+            792746      cache-misses                                                            ( +-  1.33% )  (74.30%)
+          95981203      L1-dcache-loads                                                         ( +-  0.31% )  (73.31%)
+           2826936      L1-dcache-load-misses            #    2.95% of all L1-dcache accesses   ( +-  0.95% )  (25.70%)
+           1395152      LLC-loads                                                               ( +-  1.06% )  (24.97%)
+   <not supported>      LLC-load-misses                                                       
+          65858360      branches                                                                ( +-  0.75% )  (36.94%)
+           1074021      branch-misses                    #    1.63% of all branches             ( +-  1.00% )  (48.92%)
+
+           0.10985 +- 0.00146 seconds time elapsed  ( +-  1.33% )
+
+### ALVO_BARRA: combsort_o0 ###
+
+ Performance counter stats for './combsort_o0' (100 runs):
+
+              2.23 msec task-clock:u                     #    0.705 CPUs utilized               ( +-  1.32% )
+                60      page-faults                                                             ( +-  0.13% )
+           6329948      cycles                                                                  ( +-  1.54% )  (40.04%)
+           5389015      instructions                     #    0.85  insn per cycle              ( +-  2.26% )  (86.85%)
+             11113      cache-misses                                                            ( +-  2.16% )
+           3030213      L1-dcache-loads                                                         ( +-  0.02% )
+     <not counted>      L1-dcache-load-misses                                                   ( +- 22.46% )  (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0031614 +- 0.0000629 seconds time elapsed  ( +-  1.99% )
+
+### ALVO_BARRA: combsort_o1 ###
+
+ Performance counter stats for './combsort_o1' (100 runs):
+
+              1.39 msec task-clock:u                     #    0.598 CPUs utilized               ( +-  1.60% )
+                59      page-faults                                                             ( +-  0.15% )
+           3892969      cycles                                                                  ( +-  2.00% )  (64.96%)
+           2327949      instructions                     #    0.60  insn per cycle              ( +-  1.07% )
+             10417      cache-misses                                                            ( +-  1.51% )
+            625818      L1-dcache-loads                                                         ( +-  0.12% )
+     <not counted>      L1-dcache-load-misses                                                   (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0023271 +- 0.0000493 seconds time elapsed  ( +-  2.12% )
+
+### ALVO_BARRA: combsort_o2 ###
+
+ Performance counter stats for './combsort_o2' (100 runs):
+
+              1.49 msec task-clock:u                     #    0.612 CPUs utilized               ( +-  1.59% )
+                58      page-faults                                                             ( +-  0.14% )
+           4159716      cycles                                                                  ( +-  1.74% )  (19.30%)
+           2257524      instructions                     #    0.54  insn per cycle              ( +-  1.26% )
+             10768      cache-misses                                                            ( +-  1.61% )
+            614829      L1-dcache-loads                                                         ( +-  0.13% )
+     <not counted>      L1-dcache-load-misses                                                   (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0024331 +- 0.0000485 seconds time elapsed  ( +-  1.99% )
+
+### ALVO_BARRA: combsort_o3 ###
+
+ Performance counter stats for './combsort_o3' (100 runs):
+
+              1.45 msec task-clock:u                     #    0.618 CPUs utilized               ( +-  1.61% )
+                59      page-faults                                                             ( +-  0.13% )
+           4140784      cycles                                                                  ( +-  1.84% )  (64.21%)
+           2271074      instructions                     #    0.55  insn per cycle              ( +-  1.13% )
+             10329      cache-misses                                                            ( +-  1.69% )
+            613475      L1-dcache-loads                                                         ( +-  0.10% )
+     <not counted>      L1-dcache-load-misses                                                   (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0023452 +- 0.0000448 seconds time elapsed  ( +-  1.91% )
+
+### ALVO_BARRA: combsort_ofast ###
+
+ Performance counter stats for './combsort_ofast' (100 runs):
+
+              1.45 msec task-clock:u                     #    0.621 CPUs utilized               ( +-  1.54% )
+                58      page-faults                                                             ( +-  0.13% )
+           4012291      cycles                                                                  ( +-  1.80% )  (14.03%)
+           2221882      instructions                     #    0.55  insn per cycle              ( +-  1.58% )  (89.03%)
+             10462      cache-misses                                                            ( +-  1.58% )
+            614222      L1-dcache-loads                                                         ( +-  0.11% )
+     <not counted>      L1-dcache-load-misses                                                   ( +-100.03% )  (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0023339 +- 0.0000462 seconds time elapsed  ( +-  1.98% )
+
+### ALVO_BARRA: combsort_os ###
+
+ Performance counter stats for './combsort_os' (100 runs):
+
+              1.50 msec task-clock:u                     #    0.598 CPUs utilized               ( +-  1.66% )
+                59      page-faults                                                             ( +-  0.14% )
+           4116016      cycles                                                                  ( +-  2.03% )  (63.33%)
+           2693928      instructions                     #    0.65  insn per cycle              ( +-  1.99% )
+             10825      cache-misses                                                            ( +-  1.98% )
+            627775      L1-dcache-loads                                                         ( +-  0.15% )
+     <not counted>      L1-dcache-load-misses                                                   ( +- 70.38% )  (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0024996 +- 0.0000663 seconds time elapsed  ( +-  2.65% )
+
+### ALVO_BARRA: CombSortMain ###
+
+ Performance counter stats for './run_java.sh' (100 runs):
+
+            129.64 msec task-clock:u                     #    1.160 CPUs utilized               ( +-  0.75% )
+              5294      page-faults                                                             ( +-  0.03% )
+         371348378      cycles                                                                  ( +-  0.76% )  (61.89%)
+         187662012      instructions                     #    0.51  insn per cycle              ( +-  0.37% )  (73.48%)
+           1320491      cache-misses                                                            ( +-  0.69% )  (72.58%)
+          55451100      L1-dcache-loads                                                         ( +-  0.60% )  (56.47%)
+           2983972      L1-dcache-load-misses            #    5.38% of all L1-dcache accesses   ( +-  0.79% )  (28.15%)
+           1309463      LLC-loads                                                               ( +-  0.99% )  (30.30%)
+   <not supported>      LLC-load-misses                                                       
+          32487548      branches                                                                ( +-  0.82% )  (40.10%)
+           1452660      branch-misses                    #    4.47% of all branches             ( +-  0.91% )  (50.97%)
+
+           0.11175 +- 0.00156 seconds time elapsed  ( +-  1.39% )
+

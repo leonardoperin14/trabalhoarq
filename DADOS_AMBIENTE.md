@@ -7,33 +7,35 @@ Integrantes:
 
 Sistema operacional:
 
-- Debian GNU/Linux 13 (trixie)
-- Kernel: Linux 6.12.63+deb13-amd64
+- Ubuntu 24.04.2 LTS (Noble Numbat)
+- Kernel: Linux 6.17.0-22-generic
 - Arquitetura: x86_64
 
 Hardware:
 
-- CPU: Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
-- Núcleos: 4 físicos, 1 thread por núcleo
-- Frequência: 800 MHz mínima, 3.70 GHz máxima
-- Cache L1d: 128 KiB (4 instâncias)
-- Cache L1i: 128 KiB (4 instâncias)
-- Cache L2: 1 MiB (4 instâncias)
-- Cache L3: 6 MiB (1 instância)
-- Memória RAM: 15 GiB
-- Armazenamento principal: ST1000DM003-1SB10C, 931.5 GiB
+- CPU: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+- Núcleos: 2 físicos, 2 threads por núcleo
+- Frequência: 1.60 GHz mínima, 3.10 GHz máxima
+- Cache L1d: 64 KiB (2 instâncias)
+- Cache L1i: 64 KiB (2 instâncias)
+- Cache L2: 512 KiB (2 instâncias)
+- Cache L3: 3 MiB (1 instância)
+- Memória RAM: 5.7 GiB
+- Armazenamento principal: ST3500413AS, 465.8 GiB
 
 Compiladores e interpretadores:
 
-- GCC: 14.2.0
-- Python: 3.13.5
-- Matplotlib: 3.10.9 instalado no `.venv` local do projeto
-- Java/Javac: 25.0.1
+- GCC: 13.3.0
+- Python: 3.12.3
+- Matplotlib: 3.6.3 no Python do sistema
+- Java/Javac: 21.0.10
+- perf: 6.8.12
 
 Observação sobre o benchmark:
 
-- `perf` não está instalado/disponível no PATH desta máquina.
-- `matplotlib` não está instalado no Python 3 do sistema, mas foi instalado no `.venv` local.
-- `kernel.perf_event_paranoid = 3`, então mesmo com `perf` instalado pode ser necessário ajuste administrativo para coletar eventos de hardware.
-- O script oficial `benchmark.sh` não conseguiu executar neste ambiente por falta dessas dependências/permissões.
+- `perf` está instalado e foi usado para executar o benchmark oficial.
+- `kernel.perf_event_paranoid` estava bloqueando `perf stat` para usuário comum e foi ajustado temporariamente com permissão administrativa.
+- O Python do sistema possui `matplotlib`; usar `MPLCONFIGDIR=.mplconfig` evita aviso de cache em diretório sem permissão.
 - Foi executado um smoke test local com todos os executáveis e scripts gerados; todos retornaram código 0 e validaram internamente que o vetor foi ordenado.
+- A coleta principal foi gerada em `resultados_20260504_153007/`.
+- Algumas métricas de hardware apareceram como `<not counted>` ou `<not supported>` neste computador, especialmente eventos de LLC e alguns eventos de cache/branch nos executáveis C.

@@ -1,0 +1,168 @@
+### ALVO_BARRA: combsort.py ###
+
+ Performance counter stats for './combsort.py' (100 runs):
+
+             80.51 msec task-clock:u                     #    0.976 CPUs utilized               ( +-  1.87% )
+              2775      page-faults                                                             ( +-  0.00% )
+         239363692      cycles                                                                  ( +-  1.75% )  (48.98%)
+         334502045      instructions                     #    1.40  insn per cycle              ( +-  0.26% )  (61.71%)
+            505708      cache-misses                                                            ( +-  3.05% )  (61.73%)
+          97749681      L1-dcache-loads                                                         ( +-  0.28% )  (58.65%)
+           2755515      L1-dcache-load-misses            #    2.82% of all L1-dcache accesses   ( +-  0.90% )  (25.51%)
+           1301978      LLC-loads                                                               ( +-  1.30% )  (25.52%)
+   <not supported>      LLC-load-misses                                                       
+          65282122      branches                                                                ( +-  0.43% )  (37.86%)
+           1012955      branch-misses                    #    1.55% of all branches             ( +-  1.43% )  (49.31%)
+
+           0.08252 +- 0.00168 seconds time elapsed  ( +-  2.04% )
+
+### ALVO_BARRA: combsort_o0 ###
+
+ Performance counter stats for './combsort_o0' (100 runs):
+
+              2.03 msec task-clock:u                     #    0.783 CPUs utilized               ( +-  1.45% )
+                59      page-faults                                                             ( +-  0.13% )
+           5444092      cycles                                                                  ( +-  1.55% )  (28.39%)
+           6064011      instructions                     #    1.11  insn per cycle              ( +-  1.06% )  (73.18%)
+              7144      cache-misses                                                            ( +-  4.15% )
+           3703614      L1-dcache-loads                                                         ( +-  0.85% )  (71.61%)
+     <not counted>      L1-dcache-load-misses                                                   ( +- 32.18% )  (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0025945 +- 0.0000437 seconds time elapsed  ( +-  1.68% )
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+### ALVO_BARRA: combsort_o1 ###
+
+ Performance counter stats for './combsort_o1' (100 runs):
+
+              1.24 msec task-clock:u                     #    0.654 CPUs utilized               ( +-  1.77% )
+                59      page-faults                                                             ( +-  0.13% )
+           3518059      cycles                                                                  ( +-  1.88% )  (42.40%)
+           2391511      instructions                     #    0.68  insn per cycle              ( +-  0.82% )
+              8863      cache-misses                                                            ( +-  3.34% )
+            764223      L1-dcache-loads                                                         ( +-  2.75% )  (57.60%)
+     <not counted>      L1-dcache-load-misses                                                   (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0018983 +- 0.0000514 seconds time elapsed  ( +-  2.71% )
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+### ALVO_BARRA: combsort_o2 ###
+
+ Performance counter stats for './combsort_o2' (100 runs):
+
+              1.11 msec task-clock:u                     #    0.711 CPUs utilized               ( +-  1.23% )
+                59      page-faults                                                             ( +-  0.14% )
+           3058276      cycles                                                                  ( +-  1.17% )  (23.84%)
+           2403293      instructions                     #    0.79  insn per cycle              ( +-  0.25% )
+              5457      cache-misses                                                            ( +-  3.54% )
+            739959      L1-dcache-loads                                                         ( +-  2.13% )  (76.16%)
+     <not counted>      L1-dcache-load-misses                                                   (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0015571 +- 0.0000251 seconds time elapsed  ( +-  1.61% )
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+### ALVO_BARRA: combsort_o3 ###
+
+ Performance counter stats for './combsort_o3' (100 runs):
+
+              1.21 msec task-clock:u                     #    0.709 CPUs utilized               ( +-  1.46% )
+                59      page-faults                                                             ( +-  0.12% )
+           3211715      cycles                                                                  ( +-  1.51% )  (40.71%)
+           2381589      instructions                     #    0.74  insn per cycle              ( +-  0.35% )
+              5982      cache-misses                                                            ( +-  4.10% )
+            754189      L1-dcache-loads                                                         ( +-  1.07% )  (59.29%)
+     <not counted>      L1-dcache-load-misses                                                   (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0017061 +- 0.0000282 seconds time elapsed  ( +-  1.65% )
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+### ALVO_BARRA: combsort_ofast ###
+
+ Performance counter stats for './combsort_ofast' (100 runs):
+
+              1.14 msec task-clock:u                     #    0.713 CPUs utilized               ( +-  1.27% )
+                59      page-faults                                                             ( +-  0.14% )
+           3102117      cycles                                                                  ( +-  1.62% )  (65.86%)
+           2394885      instructions                     #    0.77  insn per cycle              ( +-  0.31% )
+              5473      cache-misses                                                            ( +-  4.27% )
+            735404      L1-dcache-loads                                                         ( +-  1.70% )  (34.14%)
+     <not counted>      L1-dcache-load-misses                                                   (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0015989 +- 0.0000279 seconds time elapsed  ( +-  1.74% )
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+### ALVO_BARRA: combsort_os ###
+
+ Performance counter stats for './combsort_os' (100 runs):
+
+              1.16 msec task-clock:u                     #    0.700 CPUs utilized               ( +-  1.42% )
+                59      page-faults                                                             ( +-  0.13% )
+           3141459      cycles                                                                  ( +-  1.49% )  (20.22%)
+           2976604      instructions                     #    0.95  insn per cycle              ( +-  0.48% )  (69.23%)
+              5374      cache-misses                                                            ( +-  4.15% )
+            749080      L1-dcache-loads                                                         ( +-  1.53% )  (79.78%)
+     <not counted>      L1-dcache-load-misses                                                   (0.00%)
+     <not counted>      LLC-loads                                                               (0.00%)
+   <not supported>      LLC-load-misses                                                       
+     <not counted>      branches                                                                (0.00%)
+     <not counted>      branch-misses                                                           (0.00%)
+
+         0.0016617 +- 0.0000308 seconds time elapsed  ( +-  1.85% )
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+### ALVO_BARRA: CombSortMain ###
+
+ Performance counter stats for './run_java.sh' (100 runs):
+
+            117.85 msec task-clock:u                     #    1.149 CPUs utilized               ( +-  1.38% )
+              5293      page-faults                                                             ( +-  0.03% )
+         335922631      cycles                                                                  ( +-  1.44% )  (49.58%)
+         183269182      instructions                     #    0.55  insn per cycle              ( +-  0.49% )  (62.90%)
+           1188678      cache-misses                                                            ( +-  1.50% )  (61.10%)
+          54814274      L1-dcache-loads                                                         ( +-  0.80% )  (49.85%)
+           2877864      L1-dcache-load-misses            #    5.25% of all L1-dcache accesses   ( +-  0.89% )  (26.45%)
+           1334849      LLC-loads                                                               ( +-  1.16% )  (28.42%)
+   <not supported>      LLC-load-misses                                                       
+          31898519      branches                                                                ( +-  0.81% )  (41.70%)
+           1410233      branch-misses                    #    4.42% of all branches             ( +-  0.88% )  (51.44%)
+
+           0.10255 +- 0.00197 seconds time elapsed  ( +-  1.93% )
+

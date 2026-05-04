@@ -10,8 +10,13 @@
 - Foram criados scripts `run_java.sh` para execução das versões Java pelo `benchmark.sh`.
 - Foi criado o script `build.sh` para recompilar os executáveis C e os arquivos `.class` Java.
 - Foi criado o script `tools/generate_sources.js` para regenerar os códigos com o mesmo vetor em todas as linguagens.
-- Foi instalado `matplotlib` em um ambiente virtual local `.venv`, pois o Python do sistema não possui essa biblioteca.
+- O projeto foi clonado novamente no computador atual.
+- Os executáveis C e arquivos `.class` Java foram recompilados com sucesso neste computador usando `./build.sh`.
 - Foi executado um teste local com todos os executáveis e scripts gerados; todos retornaram código 0 e validaram internamente que o vetor ficou ordenado.
+- Foi verificado que `perf` está instalado neste computador.
+- Foi liberado temporariamente o uso do `perf` com permissão administrativa.
+- Foi executado o benchmark oficial com `./benchmark.sh --all MergeSort CombSort`.
+- Foram gerados arquivos `.txt` e gráficos PDF com os resultados.
 
 ## Arquivos principais
 
@@ -28,41 +33,58 @@
 
 ## Dados coletados da máquina
 
-- Sistema operacional: Debian GNU/Linux 13 (trixie)
-- Kernel: Linux 6.12.63+deb13-amd64
+- Sistema operacional: Ubuntu 24.04.2 LTS (Noble Numbat)
+- Kernel: Linux 6.17.0-22-generic
 - Arquitetura: x86_64
-- CPU: Intel Core i5-4590 CPU @ 3.30GHz
-- Núcleos: 4 físicos
-- RAM: 15 GiB
-- Armazenamento: ST1000DM003-1SB10C, 931.5 GiB
-- GCC: 14.2.0
-- Python: 3.13.5
-- Java/Javac: 25.0.1
-- Matplotlib local: 3.10.9 no `.venv`
+- CPU: Intel Core i3-2100 CPU @ 3.10GHz
+- Núcleos: 2 físicos, 4 threads
+- RAM: 5.7 GiB
+- Armazenamento: ST3500413AS, 465.8 GiB
+- GCC: 13.3.0
+- Python: 3.12.3
+- Java/Javac: 21.0.10
+- Matplotlib: 3.6.3 no Python do sistema
+- perf: 6.8.12
+
+## Resultados gerados
+
+- Coleta principal: `resultados_20260504_153007/`
+  - `resultado_MergeSort_20260504_153007.txt`
+  - `resultado_CombSort_20260504_153007.txt`
+  - `Grafico_Mergesort_20260504_153101.pdf`
+  - `Grafico_Combsort_20260504_153106.pdf`
+- Coleta anterior: `resultados_20260504_152631/`
 
 ## O que falta fazer
 
-- Rodar o benchmark oficial com `perf`.
-- Gerar os arquivos `.txt` de resultados e os gráficos PDF produzidos pelo `benchmark.sh`.
 - Inserir os gráficos no relatório LaTeX usando o template SBC fornecido pelo professor.
 - Escrever a análise dos resultados para cada algoritmo.
 - Escrever a conclusão com base nos dados medidos.
 - Revisar o relatório final para ficar dentro do limite de 10 páginas.
 
-## Bloqueio atual
+## Observações sobre a coleta
 
-O benchmark oficial ainda não foi executado nesta máquina porque:
+O benchmark oficial foi executado nesta máquina. Para isso, foi necessário liberar temporariamente o `perf`, pois:
 
-- `perf` não está instalado/disponível no PATH.
 - O script `benchmark.sh` exige `sudo perf`.
-- O kernel está com `perf_event_paranoid = 3`, o que normalmente restringe eventos de hardware para usuário comum.
+- O kernel está com `perf_event_paranoid = 4`, bloqueando `perf stat` para usuário comum.
 
-O `matplotlib` já foi resolvido localmente com `.venv`, mas o `perf` depende de pacote/permissão do sistema operacional e não pode ser instalado via `.venv`.
+Comando usado para liberar temporariamente a coleta:
 
-## Comando esperado quando `perf` estiver disponível
+```bash
+sudo sysctl kernel.perf_event_paranoid=1
+```
+
+Algumas métricas de hardware vieram incompletas neste computador:
+
+- `LLC-load-misses` apareceu como `<not supported>`.
+- Para vários executáveis C, eventos como `L1-dcache-load-misses`, `LLC-loads`, `branches` e `branch-misses` apareceram como `<not counted>`.
+
+Essa limitação deve ser mencionada na seção de dificuldades encontradas do relatório final.
+
+## Comando de benchmark utilizado
 
 ```bash
 mkdir -p .mplconfig
-env PATH="$PWD/.venv/bin:$PATH" MPLCONFIGDIR="$PWD/.mplconfig" ./benchmark.sh --all MergeSort CombSort
+env MPLCONFIGDIR="$PWD/.mplconfig" ./benchmark.sh --all MergeSort CombSort
 ```
-
