@@ -1,0 +1,104 @@
+### ALVO_BARRA: combsort.py ###
+
+ Performance counter stats for './combsort.py' (100 runs):
+
+            105.80 msec task-clock:u                     #    0.958 CPUs utilized               ( +-  1.80% )
+              2769      page-faults                                                             ( +-  0.00% )
+         326054832      cycles                                                                  ( +-  1.78% )
+         331363129      instructions                     #    1.02  insn per cycle              ( +-  0.03% )
+          64940448      branches                                                                ( +-  0.07% )
+           1091577      branch-misses                    #    1.68% of all branches             ( +-  1.32% )
+
+           0.11044 +- 0.00246 seconds time elapsed  ( +-  2.23% )
+
+### ALVO_BARRA: combsort_o0 ###
+
+ Performance counter stats for './combsort_o0' (100 runs):
+
+              2.05 msec task-clock:u                     #    0.698 CPUs utilized               ( +-  1.13% )
+                59      page-faults                                                             ( +-  0.14% )
+           6276778      cycles                                                                  ( +-  1.10% )
+           6709989      instructions                     #    1.07  insn per cycle              ( +-  0.05% )
+            572396      branches                                                                ( +-  0.09% )
+             51249      branch-misses                    #    8.95% of all branches             ( +-  0.19% )
+
+          0.002936 +- 0.000171 seconds time elapsed  ( +-  5.84% )
+
+### ALVO_BARRA: combsort_o1 ###
+
+ Performance counter stats for './combsort_o1' (100 runs):
+
+              1.22 msec task-clock:u                     #    0.623 CPUs utilized               ( +-  1.68% )
+                59      page-faults                                                             ( +-  0.12% )
+           3703459      cycles                                                                  ( +-  1.65% )
+           2463393      instructions                     #    0.67  insn per cycle              ( +-  0.15% )
+            609445      branches                                                                ( +-  0.10% )
+             48570      branch-misses                    #    7.97% of all branches             ( +-  0.23% )
+
+         0.0019518 +- 0.0000408 seconds time elapsed  ( +-  2.09% )
+
+### ALVO_BARRA: combsort_o2 ###
+
+ Performance counter stats for './combsort_o2' (100 runs):
+
+              1.29 msec task-clock:u                     #    0.633 CPUs utilized               ( +-  1.47% )
+                58      page-faults                                                             ( +-  0.13% )
+           3941005      cycles                                                                  ( +-  1.44% )
+           2414119      instructions                     #    0.61  insn per cycle              ( +-  0.11% )
+            563762      branches                                                                ( +-  0.08% )
+             50619      branch-misses                    #    8.98% of all branches             ( +-  0.15% )
+
+         0.0020441 +- 0.0000416 seconds time elapsed  ( +-  2.03% )
+
+### ALVO_BARRA: combsort_o3 ###
+
+ Performance counter stats for './combsort_o3' (100 runs):
+
+              1.36 msec task-clock:u                     #    0.604 CPUs utilized               ( +-  1.62% )
+                58      page-faults                                                             ( +-  0.14% )
+           4132347      cycles                                                                  ( +-  1.55% )
+           2414826      instructions                     #    0.58  insn per cycle              ( +-  0.10% )
+            563905      branches                                                                ( +-  0.08% )
+             50829      branch-misses                    #    9.01% of all branches             ( +-  0.19% )
+
+         0.0022533 +- 0.0000653 seconds time elapsed  ( +-  2.90% )
+
+### ALVO_BARRA: combsort_ofast ###
+
+ Performance counter stats for './combsort_ofast' (100 runs):
+
+              1.57 msec task-clock:u                     #    0.556 CPUs utilized               ( +-  1.94% )
+                58      page-faults                                                             ( +-  0.13% )
+           4727929      cycles                                                                  ( +-  1.87% )
+           2426991      instructions                     #    0.51  insn per cycle              ( +-  0.15% )
+            565906      branches                                                                ( +-  0.11% )
+             51531      branch-misses                    #    9.11% of all branches             ( +-  0.20% )
+
+          0.002821 +- 0.000125 seconds time elapsed  ( +-  4.44% )
+
+### ALVO_BARRA: combsort_os ###
+
+ Performance counter stats for './combsort_os' (100 runs):
+
+              1.48 msec task-clock:u                     #    0.492 CPUs utilized               ( +-  2.09% )
+                58      page-faults                                                             ( +-  0.14% )
+           4466310      cycles                                                                  ( +-  2.00% )
+           3033418      instructions                     #    0.68  insn per cycle              ( +-  0.10% )
+            771637      branches                                                                ( +-  0.06% )
+             51153      branch-misses                    #    6.63% of all branches             ( +-  0.17% )
+
+          0.003004 +- 0.000172 seconds time elapsed  ( +-  5.73% )
+
+### ALVO_BARRA: CombSortMain ###
+
+ Performance counter stats for './run_java.sh' (100 runs):
+
+            125.12 msec task-clock:u                     #    1.151 CPUs utilized               ( +-  0.82% )
+              5296      page-faults                                                             ( +-  0.02% )
+         381025380      cycles                                                                  ( +-  0.81% )
+         188409265      instructions                     #    0.49  insn per cycle              ( +-  0.10% )
+          34531165      branches                                                                ( +-  0.11% )
+           1534086      branch-misses                    #    4.44% of all branches             ( +-  0.38% )
+
+           0.10868 +- 0.00161 seconds time elapsed  ( +-  1.48% )
+

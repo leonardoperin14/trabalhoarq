@@ -1,0 +1,104 @@
+### ALVO_BARRA: mergesort.py ###
+
+ Performance counter stats for './mergesort.py' (100 runs):
+
+             98.47 msec task-clock:u                     #    0.965 CPUs utilized               ( +-  1.20% )
+              2780      page-faults                                                             ( +-  0.00% )
+         303168635      cycles                                                                  ( +-  1.20% )
+         325902020      instructions                     #    1.07  insn per cycle              ( +-  0.02% )
+          63365710      branches                                                                ( +-  0.04% )
+           1423928      branch-misses                    #    2.25% of all branches             ( +-  0.67% )
+
+           0.10206 +- 0.00149 seconds time elapsed  ( +-  1.46% )
+
+### ALVO_BARRA: mergesort_o0 ###
+
+ Performance counter stats for './mergesort_o0' (100 runs):
+
+              2.08 msec task-clock:u                     #    0.696 CPUs utilized               ( +-  1.24% )
+                65      page-faults                                                             ( +-  0.12% )
+           6320533      cycles                                                                  ( +-  1.25% )
+           5909950      instructions                     #    0.94  insn per cycle              ( +-  0.06% )
+            660690      branches                                                                ( +-  0.09% )
+             55142      branch-misses                    #    8.35% of all branches             ( +-  0.21% )
+
+          0.002994 +- 0.000159 seconds time elapsed  ( +-  5.30% )
+
+### ALVO_BARRA: mergesort_o1 ###
+
+ Performance counter stats for './mergesort_o1' (100 runs):
+
+              1.39 msec task-clock:u                     #    0.620 CPUs utilized               ( +-  1.41% )
+                65      page-faults                                                             ( +-  0.12% )
+           4242151      cycles                                                                  ( +-  1.41% )
+           3036765      instructions                     #    0.72  insn per cycle              ( +-  0.09% )
+            606530      branches                                                                ( +-  0.08% )
+             56998      branch-misses                    #    9.40% of all branches             ( +-  0.21% )
+
+          0.002244 +- 0.000175 seconds time elapsed  ( +-  7.81% )
+
+### ALVO_BARRA: mergesort_o2 ###
+
+ Performance counter stats for './mergesort_o2' (100 runs):
+
+              1.33 msec task-clock:u                     #    0.526 CPUs utilized               ( +-  1.41% )
+                65      page-faults                                                             ( +-  0.11% )
+           4037469      cycles                                                                  ( +-  1.39% )
+           2888014      instructions                     #    0.72  insn per cycle              ( +-  0.09% )
+            561723      branches                                                                ( +-  0.08% )
+             56690      branch-misses                    #   10.09% of all branches             ( +-  0.28% )
+
+          0.002521 +- 0.000495 seconds time elapsed  ( +- 19.65% )
+
+### ALVO_BARRA: mergesort_o3 ###
+
+ Performance counter stats for './mergesort_o3' (100 runs):
+
+              1.33 msec task-clock:u                     #    0.659 CPUs utilized               ( +-  1.43% )
+                66      page-faults                                                             ( +-  0.12% )
+           4039245      cycles                                                                  ( +-  1.37% )
+           2659478      instructions                     #    0.66  insn per cycle              ( +-  0.08% )
+            551759      branches                                                                ( +-  0.06% )
+             58327      branch-misses                    #   10.57% of all branches             ( +-  0.26% )
+
+         0.0020166 +- 0.0000351 seconds time elapsed  ( +-  1.74% )
+
+### ALVO_BARRA: mergesort_ofast ###
+
+ Performance counter stats for './mergesort_ofast' (100 runs):
+
+              1.32 msec task-clock:u                     #    0.667 CPUs utilized               ( +-  1.33% )
+                65      page-faults                                                             ( +-  0.12% )
+           3995222      cycles                                                                  ( +-  1.33% )
+           2663320      instructions                     #    0.67  insn per cycle              ( +-  0.12% )
+            552354      branches                                                                ( +-  0.10% )
+             58412      branch-misses                    #   10.58% of all branches             ( +-  0.29% )
+
+         0.0019722 +- 0.0000313 seconds time elapsed  ( +-  1.59% )
+
+### ALVO_BARRA: mergesort_os ###
+
+ Performance counter stats for './mergesort_os' (100 runs):
+
+              1.63 msec task-clock:u                     #    0.495 CPUs utilized               ( +-  1.42% )
+                66      page-faults                                                             ( +-  0.11% )
+           4919369      cycles                                                                  ( +-  1.40% )
+           3075790      instructions                     #    0.63  insn per cycle              ( +-  0.09% )
+            788559      branches                                                                ( +-  0.06% )
+             57696      branch-misses                    #    7.32% of all branches             ( +-  0.20% )
+
+          0.003297 +- 0.000148 seconds time elapsed  ( +-  4.48% )
+
+### ALVO_BARRA: MergeSortMain ###
+
+ Performance counter stats for './run_java.sh' (100 runs):
+
+            156.11 msec task-clock:u                     #    1.304 CPUs utilized               ( +-  0.87% )
+              5946      page-faults                                                             ( +-  0.26% )
+         476779585      cycles                                                                  ( +-  0.87% )
+         235840283      instructions                     #    0.49  insn per cycle              ( +-  0.34% )
+          44425484      branches                                                                ( +-  0.39% )
+           2144750      branch-misses                    #    4.83% of all branches             ( +-  0.48% )
+
+           0.11968 +- 0.00200 seconds time elapsed  ( +-  1.67% )
+
